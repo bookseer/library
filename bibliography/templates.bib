@@ -1,21 +1,60 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                                                                              %%%
-%%%                                       STANDARD TEMPLATES                                     %%%
-%%%         http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Standard_templates        %%% 
-%%%                                    http://www.ctan.org/pkg/bibtex                            %%%
-%%%                                                                                              %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                                                                                  %%%
+%%%                                                 STANDARD TEMPLATES                                               %%%
+%%%                   http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management#Standard_templates                  %%% 
+%%%                                              http://www.ctan.org/pkg/bibtex                                      %%%
+%%%                                                                                                                  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                                                                                  %%%
+%%% DEFINITIONS                                                                                                      %%%
+%%%  Required fields:                                                                                                %%%
+%%%  Optional fields: %                                                                                              %%%
+%%%  Ignored fields: %%                                                                                              %%%
+%%%                                                                                                                  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                                                                                                                  %%%
+%%% STANDARD FIELDS                                                                                                  %%%
+%%%  address       Usually the address of the publisher or other type of institution.                                %%% 
+%%%  author        The name(s) of the author(s), in the format described in the LaTeX book.                          %%%
+%%%  booktitle     Title of a book, part of which is being cited.                                                    %%%
+%%%  chapter       A chapter (or section or whatever) number.                                                        %%%
+%%%  crossref      The database key of the entry being cross referenced.                                             %%%
+%%%  edition       The edition of a book--for example, "Second".                                                     %%% 
+%%%  editor        Name(s) of editor(s), typed as indicated in the LaTeX book.                                       %%%
+%%%  howpublished  How something strange has been published. The first word should be capitalized.                   %%%
+%%%  institution   The sponsoring institution of a technical report.                                                 %%%
+%%%  journal       A journal name. Abbreviations are provided for many journals; see the Local Guide.                %%%
+%%%  month         The month in which the work was published or, for an unpublished work, in which it was written.   %%%
+%%%  note          Any additional information that can help the reader. The first word should be capitalized.        %%%
+%%%  number        The number of a journal, magazine, technical report, or of a work in a series.                    %%%
+%%%  organization  The organization that sponsors a conference or that publishes a manual.                           %%%
+%%%  pages         One or more page numbers or range of numbers.                                                     %%%
+%%%  publisher     The publisher's name.                                                                             %%%
+%%%  school        The name of the school where a thesis was written.                                                %%%
+%%%  series        The name of a series or set of books.                                                             %%%
+%%%  title         The work's title, typed as explained in the LaTeX book.                                           %%%
+%%%  type          The type of a technical report--for example, "Research Note".                                     %%%
+%%%  volume        The volume of a journal or multivolume book.                                                      %%%
+%%%  year          The year of publication or, for an unpublished work, the year it was written.                     %%%
+%%%                                                                                                                  %%%
+%%% NOT STANDARD FIELDS                                                                                              %%%
+%%%  abstract      An annotation.                                                                                    %%%
+%%%  doi           A digital object identifier (DOI).                                                                %%%
+%%%  comment       An comment.                                                                                       %%%
+%%%  language      A comment.                                                                                        %%%
+%%%  url           URL                                                                                               %%%
+%%%  keywords      A keywords.                                                                                       %%%
+%%%                                                                                                                  %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% Definition
-%%  Required fields:   
-%%  Optional fields: %
-%%  Ignored fields: %%
+
+
 
 %% @article 
 %% An article from a magazine or a journal.
 %% Required fields: author, title, journal, year.
 %% %Optional fields: volume, number, pages, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @article{FirstAuthor_Magazine_Year,
   author     = "",
   title      = "",
@@ -32,6 +71,7 @@
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
+  %%language = "",
 }
 
 
@@ -39,7 +79,7 @@
 %% A published book
 %% Required fields: author/editor, title, publisher, year.
 %% %Optional fields: volume/number, series, address, edition, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @book{FirstAuthor_Title_Year,
   author     = "", % editor = "",
   title      = "",
@@ -57,6 +97,7 @@
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
+  %%language = "",
 }
 
 
@@ -64,7 +105,7 @@
 %% A bound work without a named publisher or sponsor.
 %% Required fields: title.
 %% %Optional fields: author, howpublished, address, month, year, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @booklet{Title_Year,
   title           = "",
   %author         = "",
@@ -79,6 +120,7 @@
   %%doi           = "",
   %%keywords      = "",
   %%comment       = "",
+  %%language      = "",
 }
 
 
@@ -86,7 +128,7 @@
 %% A section of a book without its own title.
 %% Required fields: author/editor, title, chapter and/or pages, publisher, year.
 %% %Optional fields: volume/number, series, type, address, edition, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @inbook{FirstAuthor_Title_Year,
   author	 = "", % editor	= "",
   title	     = "",
@@ -107,6 +149,7 @@
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
+  %%language = "",
 }
 
 
@@ -114,7 +157,7 @@
 %% A section of a book having its own title.
 %% Required fields: author, title, booktitle, publisher, year.
 %% %Optional fields: editor, volume/number, series, type, chapter, pages, address, edition, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @incollection{FirstAuthor_Title_Year,
   author	 = "",
   title	     = "",
@@ -137,6 +180,7 @@
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
+  %%language = "",
 }
 
 
@@ -144,7 +188,7 @@
 %% An article in a conference proceedings. 
 %% Required fields: author, title, booktitle, year.
 %% %Optional fields: editor, volume/number, series, pages, address, month, organization, publisher, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @inproceedings{FirstAuthor_ConferenceName_Year,
   author        = "",
   title         = "",
@@ -165,6 +209,7 @@
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
+  %%language    = "",
 }
 
 
@@ -172,7 +217,7 @@
 %% Technical manual
 %% Required fields: title.
 %% %Optional fields: author, organization, address, edition, month, year, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @manual{Title,
   title         = "",
   %author       = "",
@@ -188,6 +233,7 @@
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
+  %%language    = "",
 }
 
 
@@ -195,7 +241,7 @@
 %% Master's thesis
 %% Required fields: author, title, school, year.
 %% %Optional fields: type (eg. "diploma thesis"), address, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @mastersthesis{Author_Title_Year,
   author     = "",
   title      = "",
@@ -211,6 +257,7 @@
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
+  %%language = "",
 }
 
 
@@ -219,7 +266,7 @@
 %% Template useful for other kinds of publication
 %% Required fields: none
 %% %Optional fields: author, title, howpublished, month, year, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @misc{FirstAuthor_Title_Year,
   %author       = "",
   %title        = "",
@@ -233,6 +280,7 @@
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
+  %%language    = "",
 }
 
 
@@ -240,7 +288,7 @@
 %% Ph.D. thesis
 %% Required fields: author, title, year, school.
 %% %Optional fields: type (eg. "diploma thesis"), address, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @phdthesis{Author_Title_Year,
   author     = "",
   title      = "",
@@ -256,13 +304,14 @@
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
+  %%language = "",
 }
 
 %% @proceedings 
 %% The proceedings of a conference.
 %% Required fields: title, year.
 %% %Optional fields: editor, volume/number, series, address, month, organization, publisher, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @proceedings{Title_Year,
   title         = "",
   year          = "",
@@ -280,6 +329,7 @@
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
+  %%language    = "",
 }
 
 
@@ -287,7 +337,7 @@
 %% Technical report from educational, commercial or standardization institution.
 %% Required fields: author, title, institution, year.
 %% %Optional fields: type, number, address, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @techreport{FirstAuthor_Title_Year,
   author      = "",
   title       = "",
@@ -304,6 +354,7 @@
   %%doi       = "",
   %%keywords  = "",
   %%comment   = "",
+  %%language  = "",
 }
 
 
@@ -311,7 +362,7 @@
 %% An unpublished article, book, thesis, etc.
 %% Required fields: author, title, note.
 %% %Optional fields: month, year.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @unpublished{FirstAuthor_Title,
   author     = "",
   title	     = "",
@@ -324,6 +375,7 @@
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
+  %%language = "",
 }
 
 
