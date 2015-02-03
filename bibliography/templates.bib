@@ -39,11 +39,12 @@
 %%%                                                                                                                  %%%
 %%% NOT STANDARD FIELDS                                                                                              %%%
 %%%  abstract      An annotation.                                                                                    %%%
-%%%  doi           A digital object identifier (DOI).                                                                %%%
 %%%  comment       An comment.                                                                                       %%%
+%%%  doi           A digital object identifier (DOI).                                                                %%%
+%%%  isbn          The International Standard Book Number (ISBN)                                                     %%%
+%%%  keywords      A keywords.                                                                                       %%%
 %%%  language      A comment.                                                                                        %%%
 %%%  url           URL                                                                                               %%%
-%%%  keywords      A keywords.                                                                                       %%%
 %%%                                                                                                                  %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -79,7 +80,7 @@
 %% A published book
 %% Required fields: author/editor, title, publisher, year.
 %% %Optional fields: volume/number, series, address, edition, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @book{FirstAuthor_Title_Year,
   author     = "", % editor = "",
   title      = "",
@@ -91,6 +92,7 @@
   %edition   = "",
   %month     = "",
   %note      = "",
+  %%isbn       = "",
   %%crossref = "",
   %%abstract = "",
   %%url      = "",
@@ -128,7 +130,7 @@
 %% A section of a book without its own title.
 %% Required fields: author/editor, title, chapter and/or pages, publisher, year.
 %% %Optional fields: volume/number, series, type, address, edition, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @inbook{FirstAuthor_Title_Year,
   author	 = "", % editor	= "",
   title	     = "",
@@ -143,6 +145,7 @@
   %edition   = "",
   %month	 = "",
   %note	     = "",
+  %%isbn       = "",
   %%crossref = "",
   %%abstract = "",
   %%url      = "",
@@ -157,7 +160,7 @@
 %% A section of a book having its own title.
 %% Required fields: author, title, booktitle, publisher, year.
 %% %Optional fields: editor, volume/number, series, type, chapter, pages, address, edition, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @incollection{FirstAuthor_Title_Year,
   author	 = "",
   title	     = "",
@@ -174,6 +177,7 @@
   %edition   = "",
   %month	 = "",
   %note	     = "",
+  %%isbn     = "",
   %%crossref = "",
   %%abstract = "",
   %%url      = "",
@@ -214,10 +218,10 @@
 
 
 %% @manual 
-%% Technical manual
+%% Technical documentations
 %% Required fields: title.
 %% %Optional fields: author, organization, address, edition, month, year, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @manual{Title,
   title         = "",
   %author       = "",
@@ -227,6 +231,7 @@
   %month        = "",
   %year	        = "",
   %note	        = "",
+  %%isbn        = "",
   %%crossref    = "",
   %%abstract    = "",
   %%url         = "",
@@ -266,7 +271,7 @@
 %% Template useful for other kinds of publication
 %% Required fields: none
 %% %Optional fields: author, title, howpublished, month, year, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @misc{FirstAuthor_Title_Year,
   %author       = "",
   %title        = "",
@@ -274,6 +279,7 @@
   %month        = "",
   %year         = "",
   %note         = "",
+  %%isbn        = "",
   %%crossref    = "",
   %%abstract    = "",
   %%url         = "",
@@ -311,7 +317,7 @@
 %% The proceedings of a conference.
 %% Required fields: title, year.
 %% %Optional fields: editor, volume/number, series, address, month, organization, publisher, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @proceedings{Title_Year,
   title         = "",
   year          = "",
@@ -323,6 +329,7 @@
   %organization = "",
   %publisher    = "",
   %note         = "",
+  %%isbn        = "",
   %%crossref    = "",
   %%abstract    = "",
   %%url         = "",
@@ -337,7 +344,7 @@
 %% Technical report from educational, commercial or standardization institution.
 %% Required fields: author, title, institution, year.
 %% %Optional fields: type, number, address, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
 @techreport{FirstAuthor_Title_Year,
   author      = "",
   title       = "",
@@ -348,6 +355,7 @@
   %address    = "",
   %month      = "",
   %note       = "",
+  %%isbn      = "",
   %%crossref  = "",
   %%abstract  = "",
   %%url       = "",
@@ -377,18 +385,3 @@
   %%comment  = "",
   %%language = "",
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
