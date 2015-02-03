@@ -14,13 +14,13 @@
 %% @article 
 %% An article from a magazine or a journal.
 %% Required fields: author, title, journal, year.
-%% Optional fields: volume, number, pages, month, note.
-
+%% %Optional fields: volume, number, pages, month, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @article{FirstAuthor_Magazine_Year,
   author     = "",
   title      = "",
   journal    = "",
-  year       = "XXXX",
+  year       = "",
   %volume    = "",
   %number    = "",
   %pages     = "",
@@ -38,14 +38,14 @@
 %% @book 
 %% A published book
 %% Required fields: author/editor, title, publisher, year.
-%% Optional fields: volume/number, series, address, edition, month, note.
-
+%% %Optional fields: volume/number, series, address, edition, month, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @book{FirstAuthor_Title_Year,
-  author     = "", % editor     = "",
+  author     = "", % editor = "",
   title      = "",
   publisher  = "",
-  year       = "XXXX",
-  %volume    = "", % number    = "",
+  year       = "",
+  %volume    = "", % number = "",
   %series    = "",
   %address   = "",
   %edition   = "",
@@ -63,15 +63,15 @@
 %% @booklet 
 %% A bound work without a named publisher or sponsor.
 %% Required fields: title.
-%% Optional fields: author, howpublished, address, month, year, note.
-
+%% %Optional fields: author, howpublished, address, month, year, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @booklet{Title_Year,
   title           = "",
   %author         = "",
   %howpublished   = "",
   %address        = "",
   %month          = "",
-  %year           = "XXXX",
+  %year           = "",
   %note           = "",
   %%crossref      = "",
   %%abstract      = "",
@@ -85,15 +85,15 @@
 %% @inbook 
 %% A section of a book without its own title.
 %% Required fields: author/editor, title, chapter and/or pages, publisher, year.
-%% Optional fields: volume/number, series, type, address, edition, month, note.
-
+%% %Optional fields: volume/number, series, type, address, edition, month, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @inbook{FirstAuthor_Title_Year,
   author	 = "", % editor	= "",
   title	     = "",
   chapter	 = "",
   pages      = "",
   publisher  = "",
-  year       = "XXXX",
+  year       = "",
   %volume	 = "", % number	= "",
   %series	 = "",
   %type	     = "",
@@ -113,8 +113,8 @@
 %% @incollection 
 %% A section of a book having its own title.
 %% Required fields: author, title, booktitle, publisher, year.
-%% Optional fields: editor, volume/number, series, type, chapter, pages, address, edition, month, note.
-
+%% %Optional fields: editor, volume/number, series, type, chapter, pages, address, edition, month, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @incollection{FirstAuthor_Title_Year,
   author	 = "",
   title	     = "",
@@ -143,15 +143,15 @@
 %% @inproceedings %@conference 
 %% An article in a conference proceedings. 
 %% Required fields: author, title, booktitle, year.
-%% Optional fields: editor, volume/number, series, pages, address, month, organization, publisher, note.
-
+%% %Optional fields: editor, volume/number, series, pages, address, month, organization, publisher, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @inproceedings{FirstAuthor_ConferenceName_Year,
   author        = "",
   title         = "",
   booktitle     = "",
-  year          = "XXXX",
+  year          = "",
   %editor       = "",
-  %volume       = "", % number   = "",
+  %volume       = "", % number = "",
   %series       = "",
   %pages        = "",
   %address      = "",
@@ -171,8 +171,8 @@
 %% @manual 
 %% Technical manual
 %% Required fields: title.
-%% Optional fields: author, organization, address, edition, month, year, note.
-
+%% %Optional fields: author, organization, address, edition, month, year, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @manual{Title,
   title         = "",
   %author       = "",
@@ -194,14 +194,14 @@
 %% @mastersthesis 
 %% Master's thesis
 %% Required fields: author, title, school, year.
-%% Optional fields: type (eg. "diploma thesis"), address, month, note.
-
+%% %Optional fields: type (eg. "diploma thesis"), address, month, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @mastersthesis{Author_Title_Year,
   author     = "",
   title      = "",
   school     = "",
-  year       = "XXXX",
-  %type      = "diploma thesis",
+  year       = "",
+  %type      = "",
   %address   = "",
   %month     = "",
   %note      = "",
@@ -218,15 +218,15 @@
 %% @misc 
 %% Template useful for other kinds of publication
 %% Required fields: none
-%% Optional fields: author, title, howpublished, month, year, note.
-
+%% %Optional fields: author, title, howpublished, month, year, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @misc{FirstAuthor_Title_Year,
   %author       = "",
   %title        = "",
   %howpublished = "",
-  %year         = "XXXX",
-  %note         = "",
   %month        = "",
+  %year         = "",
+  %note         = "",
   %%crossref    = "",
   %%abstract    = "",
   %%url         = "",
@@ -239,14 +239,14 @@
 %% @phdthesis 
 %% Ph.D. thesis
 %% Required fields: author, title, year, school.
-%% Optional fields: address, month, keywords, note.
-
+%% %Optional fields: type (eg. "diploma thesis"), address, month, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @phdthesis{Author_Title_Year,
   author     = "",
   title      = "",
-  school     = "",
   year       = "",
-  %type      = "diploma thesis",
+  school     = "",
+  %type      = "",
   %address	 = "",
   %month     = "",
   %note	     = "",
@@ -261,8 +261,8 @@
 %% @proceedings 
 %% The proceedings of a conference.
 %% Required fields: title, year.
-%% Optional fields: editor, volume/number, series, address, month, organization, publisher, note.
-
+%% %Optional fields: editor, volume/number, series, address, month, organization, publisher, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @proceedings{Title_Year,
   title         = "",
   year          = "",
@@ -286,13 +286,13 @@
 %% @techreport 
 %% Technical report from educational, commercial or standardization institution.
 %% Required fields: author, title, institution, year.
-%% Optional fields: type, number, address, month, note.
-
+%% %Optional fields: type, number, address, month, note.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @techreport{FirstAuthor_Title_Year,
   author      = "",
   title       = "",
   institution = "",
-  year        = "XXXX",
+  year        = "",
   %type       = "", 
   %number     = "",
   %address    = "",
@@ -310,8 +310,8 @@
 %% @unpublished 
 %% An unpublished article, book, thesis, etc.
 %% Required fields: author, title, note.
-%% Optional fields: month, year.
-
+%% %Optional fields: month, year.
+%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment. 
 @unpublished{FirstAuthor_Title,
   author     = "",
   title	     = "",
