@@ -45,6 +45,7 @@
 %%%  keywords      A keywords.                                                                                       %%%
 %%%  language      A comment.                                                                                        %%%
 %%%  url           URL                                                                                               %%%
+%%%  file          File                                                                                              %%%
 %%%                                                                                                                  %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -55,7 +56,7 @@
 %% An article from a magazine or a journal.
 %% Required fields: author, title, journal, year.
 %% %Optional fields: volume, number, pages, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @article{Authors_Magazine_Year,
   author     = "",
   title      = "",
@@ -68,11 +69,12 @@
   %note      = "",
   %%crossref = "",
   %%abstract = "",
-  %%url      = "",
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
   %%language = "",
+  %%url      = "",
+  %%file     = "", 
 }
 
 
@@ -80,7 +82,7 @@
 %% A published book
 %% Required fields: author/editor, title, publisher, year.
 %% %Optional fields: volume/number, series, address, edition, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @book{Authors_Title_Year,
   author     = "", % editor = "",
   title      = "",
@@ -95,11 +97,12 @@
   %%isbn     = "",
   %%crossref = "",
   %%abstract = "",
-  %%url      = "",
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
   %%language = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -107,7 +110,7 @@
 %% A bound work without a named publisher or sponsor.
 %% Required fields: title.
 %% %Optional fields: author, howpublished, address, month, year, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @booklet{Title_Year,
   title         = "",
   %author       = "",
@@ -118,11 +121,12 @@
   %note         = "",
   %%crossref    = "",
   %%abstract    = "",
-  %%url         = "",
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
   %%language    = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -130,7 +134,7 @@
 %% A section of a book without its own title.
 %% Required fields: author/editor, title, chapter and/or pages, publisher, year.
 %% %Optional fields: volume/number, series, type, address, edition, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @inbook{Authors_Title_Year,
   author     = "", % editor = "",
   title      = "",
@@ -148,11 +152,12 @@
   %%isbn     = "",
   %%crossref = "",
   %%abstract = "",
-  %%url      = "",
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
   %%language = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -160,7 +165,7 @@
 %% A section of a book having its own title.
 %% Required fields: author, title, booktitle, publisher, year.
 %% %Optional fields: editor, volume/number, series, type, chapter, pages, address, edition, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @incollection{Authors_Title_Year,
   author     = "",
   title      = "",
@@ -180,11 +185,12 @@
   %%isbn     = "",
   %%crossref = "",
   %%abstract = "",
-  %%url      = "",
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
   %%language = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -192,7 +198,7 @@
 %% An article in a conference proceedings. 
 %% Required fields: author, title, booktitle, year.
 %% %Optional fields: editor, volume/number, series, pages, address, month, organization, publisher, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @inproceedings{Authors_ConferenceName_Year,
   author        = "",
   title         = "",
@@ -209,11 +215,12 @@
   %note         = "",
   %%crossref    = "",
   %%abstract    = "",
-  %%url         = "",
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
   %%language    = "",
+  %%url         = "",
+  %%file        = "",
 }
 
 
@@ -221,7 +228,7 @@
 %% Technical documentations
 %% Required fields: title.
 %% %Optional fields: author, organization, address, edition, month, year, note.
-%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @manual{Title,
   title         = "",
   %author       = "",
@@ -234,11 +241,12 @@
   %%isbn        = "",
   %%crossref    = "",
   %%abstract    = "",
-  %%url         = "",
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
   %%language    = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -246,7 +254,7 @@
 %% Master's thesis
 %% Required fields: author, title, school, year.
 %% %Optional fields: type (eg. "diploma thesis"), address, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @mastersthesis{Author_Title_Year,
   author     = "",
   title      = "",
@@ -258,11 +266,12 @@
   %note      = "",
   %%crossref = "",
   %%abstract = "",
-  %%url      = "",
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
   %%language = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -270,7 +279,7 @@
 %% Template useful for other kinds of publication
 %% Required fields: none
 %% %Optional fields: author, title, howpublished, month, year, note.
-%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @misc{Authors_Title_Year,
   %author       = "",
   %title        = "",
@@ -281,11 +290,12 @@
   %%isbn        = "",
   %%crossref    = "",
   %%abstract    = "",
-  %%url         = "",
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
   %%language    = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -293,7 +303,7 @@
 %% Ph.D. thesis
 %% Required fields: author, title, year, school.
 %% %Optional fields: type (eg. "diploma thesis"), address, month, note.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @phdthesis{Author_Title_Year,
   author     = "",
   title      = "",
@@ -305,11 +315,12 @@
   %note      = "",
   %%crossref = "",
   %%abstract = "",
-  %%url      = "",
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
   %%language = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -317,7 +328,7 @@
 %% The proceedings of a conference.
 %% Required fields: title, year.
 %% %Optional fields: editor, volume/number, series, address, month, organization, publisher, note.
-%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @proceedings{Title_Year,
   title         = "",
   year          = "",
@@ -332,11 +343,12 @@
   %%isbn        = "",
   %%crossref    = "",
   %%abstract    = "",
-  %%url         = "",
   %%doi         = "",
   %%keywords    = "",
   %%comment     = "",
   %%language    = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -344,7 +356,7 @@
 %% Technical report from educational, commercial or standardization institution.
 %% Required fields: author, title, institution, year.
 %% %Optional fields: type, number, address, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: isbn, crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @techreport{Authors_Title_Year,
   author      = "",
   title       = "",
@@ -358,11 +370,12 @@
   %%isbn      = "",
   %%crossref  = "",
   %%abstract  = "",
-  %%url       = "",
   %%doi       = "",
   %%keywords  = "",
   %%comment   = "",
   %%language  = "",
+  %%url      = "",
+  %%file     = "",
 }
 
 
@@ -370,7 +383,7 @@
 %% An unpublished article, book, thesis, etc.
 %% Required fields: author, title, note.
 %% %Optional fields: month, year.
-%% %%Ignored fields: crossref, abstract, url, doi, keywords, comment, language (eg. "russian" or "english"). 
+%% %%Ignored fields: crossref, abstract, doi, keywords, comment, language (eg. "russian" or "english"), url, file. 
 @unpublished{Authors_Title,
   author     = "",
   title      = "",
@@ -379,9 +392,10 @@
   %year      = "",
   %%crossref = "",
   %%abstract = "",
-  %%url      = "",
   %%doi      = "",
   %%keywords = "",
   %%comment  = "",
   %%language = "",
+  %%url      = "",
+  %%file     = "",
 }
