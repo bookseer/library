@@ -46,7 +46,8 @@
 %%%  keywords      A keywords.                                                                                       %%%
 %%%  language      A comment.                                                                                        %%%
 %%%  url           URL                                                                                               %%%
-%%%  file          File                                                                                              %%%
+%%%  urifile       Remote file                                                                                       %%%
+%%%  file          Local file                                                                                        %%%
 %%%                                                                                                                  %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -57,7 +58,7 @@
 %% An article from a magazine or a journal.
 %% Required fields: author, title, journal, year.
 %% %Optional fields: volume, number, pages, month, note.
-%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @article{firstauthor_magazine_number_year,
   author   = {},
   title    = {},
@@ -76,6 +77,7 @@
   comment  = {},
   language = {},
   url      = {},
+  urifile  = {},
   file     = {}, 
 }
 
@@ -84,7 +86,7 @@
 %% A published book
 %% Required fields: author/editor, title, publisher, year.
 %% %Optional fields: volume/number, series, address, edition, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @book{Authors_Title_Year,
   author    = {}, % editor = {},
   title     = {},
@@ -105,6 +107,7 @@
   comment   = {},
   language  = {},
   url       = {},
+  urifile   = {},
   file      = {},
 }
 
@@ -113,7 +116,7 @@
 %% A bound work without a named publisher or sponsor.
 %% Required fields: title.
 %% %Optional fields: author, howpublished, address, month, year, note.
-%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @booklet{Title_Year,
   title        = {},
   author       = {},
@@ -130,6 +133,7 @@
   comment      = {},
   language     = {},
   url          = {},
+  urifile      = {},
   file         = {},
 }
 
@@ -138,7 +142,7 @@
 %% A section of a book without its own title.
 %% Required fields: author/editor, title, chapter and/or pages, publisher, year.
 %% %Optional fields: volume/number, series, type, address, edition, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @inbook{Authors_Title_Year,
   author    = {}, % editor = {},
   title     = {},
@@ -162,6 +166,7 @@
   comment   = {},
   language  = {},
   url       = {},
+  urifile   = {},
   file      = {},
 }
 
@@ -170,7 +175,7 @@
 %% A section of a book having its own title.
 %% Required fields: author, title, booktitle, publisher, year.
 %% %Optional fields: editor, volume/number, series, type, chapter, pages, address, edition, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @incollection{Authors_Title_Year,
   author    = {},
   title     = {},
@@ -196,6 +201,7 @@
   comment   = {},
   language  = {},
   url       = {},
+  urifile   = {},
   file      = {},
 }
 
@@ -204,7 +210,7 @@
 %% An article in a conference proceedings. 
 %% Required fields: author, title, booktitle, year.
 %% %Optional fields: editor, volume/number, series, pages, address, month, organization, publisher, note.
-%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @inproceedings{Authors_ConferenceName_Year,
   author       = {},
   title        = {},
@@ -227,6 +233,7 @@
   comment      = {},
   language     = {},
   url          = {},
+  urifile      = {},
   file         = {},
 }
 
@@ -235,7 +242,7 @@
 %% Technical documentations
 %% Required fields: title.
 %% %Optional fields: author, organization, address, edition, month, year, note.
-%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @manual{Title,
   title        = {},
   author       = {},
@@ -254,6 +261,7 @@
   comment      = {},
   language     = {},
   url          = {},
+  urifile      = {}, 
   file         = {},
 }
 
@@ -262,7 +270,7 @@
 %% Master's thesis
 %% Required fields: author, title, school, year.
 %% %Optional fields: type (eg. "diploma thesis"), address, month, note.
-%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @mastersthesis{Author_Title_Year,
   author   = {},
   title    = {},
@@ -280,6 +288,7 @@
   comment  = {},
   language = {},
   url      = {},
+  urifile  = {},
   file     = {},
 }
 
@@ -288,7 +297,7 @@
 %% Template useful for other kinds of publication
 %% Required fields: none
 %% %Optional fields: author, title, howpublished, month, year, note.
-%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @misc{Authors_Title_Year,
   author       = {},
   title        = {},
@@ -305,6 +314,7 @@
   comment      = {},
   language     = {},
   url          = {},
+  urifile      = {},
   file         = {},
 }
 
@@ -313,7 +323,7 @@
 %% Ph.D. thesis
 %% Required fields: author, title, year, school.
 %% %Optional fields: type (eg. "diploma thesis"), address, month, note.
-%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @phdthesis{Author_Title_Year,
   author   = {},
   title    = {},
@@ -331,6 +341,7 @@
   comment  = {},
   language = {},
   url      = {},
+  urifile  = {},
   file     = {},
 }
 
@@ -339,7 +350,7 @@
 %% The proceedings of a conference.
 %% Required fields: title, year.
 %% %Optional fields: editor, volume/number, series, address, month, organization, publisher, note.
-%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @proceedings{Title_Year,
   title        = {},
   year         = {},
@@ -360,6 +371,7 @@
   comment      = {},
   language     = {},
   url          = {},
+  urifile      = {},
   file         = {},
 }
 
@@ -368,7 +380,7 @@
 %% Technical report from educational, commercial or standardization institution.
 %% Required fields: author, title, institution, year.
 %% %Optional fields: type, number, address, month, note.
-%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: isbn, crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @techreport{Authors_Title_Year,
   author      = {},
   title       = {},
@@ -388,6 +400,7 @@
   comment     = {},
   language    = {},
   url         = {},
+  urifile     = {},
   file        = {},
 }
 
@@ -396,7 +409,7 @@
 %% An unpublished article, book, thesis, etc.
 %% Required fields: author, title, note.
 %% %Optional fields: month, year.
-%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, file. 
+%% %%Ignored fields: crossref, abstract, doi, udk, keywords, comment, language (eg. "russian" or "english"), url, urifile, file. 
 @unpublished{Authors_Title,
   author   = {},
   title    = {},
@@ -411,5 +424,6 @@
   comment  = {},
   language = {},
   url      = {},
+  urifile  = {},
   file     = {},
 }
